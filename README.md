@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blooplingo
 
-## Getting Started
+This is a private platform of _Harikesh Ranjan Sinha_ to practice Russian (predominently) and Turkish.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Blooplingo provides the following features in the `v0` release:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Personal Russian dictionary
+- Common Russian phrases
+- Personal Turkish dictionary
+- Common Turkish phrases
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> [!IMPORTANT]
+> All these are segregated level wise
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Future enhancements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Blooplingo will be enhanced with the following features in the `v1` release:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Russian dictionary
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+There are two ways to contribute to Blooplingo:
+
+1. Contributing code
+2. Contributing by joining the platform
+
+### 1. Contributing code
+
+Contributions are welcome! If you have any suggestions or find any issues, please write an email to [ranjansinhaharikesh@gmail.com](mailto:ranjansinhaharikesh@gmail.com). Since this is a private platform, all contributions are subject to review and approval.
+
+### 2. Contributing by joining the platform
+
+If you want to contribute by joining _Blooplingo_, please write an email to [ranjansinhaharikesh@gmail.com](mailto:ranjansinhaharikesh@gmail.com) with your interest and details.
+
+You will get a role based credentials of the platform to contribute to the platform.
+
+> [!NOTE]
+> All the roles have to follow a certain set of rules and guidelines to ensure a smooth and productive experience for all contributors and maintain the integrity of the platform. Failing to follow these guidelines may result in your role being revoked and strictly enforced.
+
+---
+
+## License
+
+Blooplingo is licensed under the [GPL-3.0](https://opensource.org/licenses/GPL-3.0) and is open source for personal use with different databases.
