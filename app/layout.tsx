@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -47,8 +49,11 @@ export default async function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<Header />
-					{children}
+					<TooltipProvider>
+						<Header />
+						{children}
+						<Footer />
+					</TooltipProvider>
 				</ThemeProvider>
 			</body>
 		</html>

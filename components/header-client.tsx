@@ -36,11 +36,7 @@ import {
 	DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
-interface User {
-	id: string;
-	email: string;
-}
+import { User as SupabaseUser } from "@supabase/supabase-js";
 
 interface Profile {
 	id: string;
@@ -52,7 +48,7 @@ interface Profile {
 }
 
 interface HeaderProp {
-	user: User | null;
+	user: SupabaseUser | null;
 	profile: Profile;
 }
 
@@ -340,7 +336,7 @@ function ListItem({
 			<NavigationMenuLink>
 				<Link
 					href={href}
-					className={`group block rounded-lg px-3 py-2 no-underline outline-none transition-all duration-200 hover:bg-white/10 focus:bg-white/10 focus-visible:ring-2 focus-visible:ring-ring ${className ?? ""}`}
+					className={`group block rounded-lg px-3 py-2 no-underline outline-none transition-all duration-200 focus:bg-white/10 focus-visible:ring-2 focus-visible:ring-ring ${className ?? ""}`}
 				>
 					<div className="space-y-1">
 						<h4 className="flex items-center gap-2 text-sm font-semibold leading-none transition-colors group-hover:text-primary">
