@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 	description: "A personalized language practicing app",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
@@ -29,6 +30,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
+			suppressHydrationWarning
 			className={cn(
 				"h-full",
 				"antialiased",
@@ -45,6 +47,7 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
+					<Header />
 					{children}
 				</ThemeProvider>
 			</body>

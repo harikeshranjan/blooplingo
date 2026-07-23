@@ -14,7 +14,7 @@ import {
 import { Mail, Lock, Eye, EyeOff, Loader2 } from "lucide-react";
 
 import { GREETINGS } from "./greetings";
-import { BloopMark } from "./bloop-mark";
+import { BloopMark } from "../../../components/bloop-mark";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 
@@ -57,6 +57,7 @@ export default function LoginForm() {
 				return;
 			}
 
+			window.location.reload();
 			router.push("/");
 		} catch (error) {
 			console.log("Error signing in the app: ", error);
