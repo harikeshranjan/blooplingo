@@ -14,6 +14,7 @@ import {
 	Settings,
 	LogOut,
 	Languages,
+	Edit3Icon,
 } from "lucide-react";
 import {
 	NavigationMenu,
@@ -162,9 +163,24 @@ export default function HeaderClient({ user, profile }: HeaderProp) {
 
 								<DropdownMenuSeparator />
 
-								<DropdownMenuItem className="cursor-pointer">
+								<DropdownMenuItem
+									className="cursor-pointer"
+									onClick={() =>
+										router.push("/common/profile")
+									}
+								>
 									<User className="mr-2 h-4 w-4" />
 									Profile
+								</DropdownMenuItem>
+
+								<DropdownMenuItem
+									className="cursor-pointer"
+									onClick={() =>
+										router.push("/common/contribution")
+									}
+								>
+									<Edit3Icon className="mr-2 h-4 w-4" />
+									Contribution
 								</DropdownMenuItem>
 
 								<DropdownMenuItem className="cursor-pointer">
